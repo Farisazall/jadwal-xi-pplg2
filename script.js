@@ -57,7 +57,7 @@ const dataJadwal = {
 
         ["Web & Perangkat", "Jam ke 5-8"],
 
-        ["Matematika", "Jam ke 9-8"]
+        ["Matematika", "Jam ke 9-11"]
 
     ],
 
