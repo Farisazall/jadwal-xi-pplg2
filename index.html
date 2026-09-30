@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jadwal Pelajaran XI PPLG 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="header-top">
+
+            <div class="logo">
+                📚
+            </div>
+
+            <button id="modeBtn" class="mode-btn" type="button">
+                🌙 Mode Gelap
+            </button>
+
+        </div>
+
+        <h1>
+            Jadwal Pelajaran
+        </h1>
+
+        <p>
+            XI PPLG 2 • SMK Negeri 1 Pedan
+        </p>
+
+        <div class="header-decoration"></div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- WELCOME -->
+        <section class="welcome">
+
+            <div>
+
+                <span class="label">
+                    SCHOOL SCHEDULE
+                </span>
+
+                <h2>
+                    Jadwal Kelas XI PPLG 2
+                </h2>
+
+                <p>
+                    Temukan jadwal pelajaranmu dengan mudah.
+                </p>
+
+            </div>
+
+
+            <div class="today-box">
+
+                <span>
+                    HARI INI
+                </span>
+
+                <strong id="hariIni">
+                    -
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- PILIH HARI -->
+        <section class="kontrol">
+
+            <div class="pilihan">
+
+                <label for="hari">
+                    📅 Pilih Hari
+                </label>
+
+                <select id="hari">
+
+                    <option value="">
+                        Pilih hari untuk melihat jadwal
+                    </option>
+
+                    <option value="senin">
+                        Senin
+                    </option>
+
+                    <option value="selasa">
+                        Selasa
+                    </option>
+
+                    <option value="rabu">
+                        Rabu
+                    </option>
+
+                    <option value="kamis">
+                        Kamis
+                    </option>
+
+                    <option value="jumat">
+                        Jumat
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                id="hariIniBtn"
+                class="today-btn"
+                type="button">
+
+                📍 Jadwal Hari Ini
+
+            </button>
+
+        </section>
+
+
+        <!-- SEARCH -->
+        <section class="search-box">
+
+            <div class="search-icon">
+                🔎
+            </div>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Cari mata pelajaran..."
+            >
+
+        </section>
+
+
+        <!-- STATISTIK -->
+        <section class="statistik">
+
+            <div class="stat-card">
+
+                <span>
+                    📚
+                </span>
+
+                <div>
+
+                    <small>
+                        Mata Pelajaran
+                    </small>
+
+                    <strong id="jumlahMapel">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    ⏰
+                </span>
+
+                <div>
+
+                    <small>
+                        Jam Pelajaran
+                    </small>
+
+                    <strong id="jumlahJam">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span>
+                    📅
+                </span>
+
+                <div>
+
+                    <small>
+                        Hari
+                    </small>
+
+                    <strong id="namaHariStat">
+                        -
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- JADWAL -->
+        <section id="jadwal" class="jadwal">
+
+            <div class="pesan">
+
+                <div class="icon">
+                    🗓️
+                </div>
+
+                <h3>
+                    Belum ada hari yang dipilih
+                </h3>
+
+                <p>
+                    Pilih hari di atas untuk melihat jadwal pelajaran.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-line"></div>
+
+        <p>
+            © 2026 XI PPLG 2 • SMK Negeri 1 Pedan
+        </p>
+
+        <span>
+            Study • Code • Create
+        </span>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

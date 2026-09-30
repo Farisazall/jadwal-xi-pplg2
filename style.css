@@ -1,0 +1,1004 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================= WARNA ================= */
+
+:root {
+
+    --navy: #173f5f;
+    --teal: #206a7a;
+    --teal-light: #4d9aaa;
+
+    --cream: #f7f3ea;
+
+    --white: #ffffff;
+
+    --gray: #edf2f3;
+
+    --text: #203746;
+
+    --muted: #71818a;
+
+    --coral: #e07a5f;
+
+    --shadow: rgba(23, 63, 95, 0.15);
+
+}
+
+
+/* ================= BODY ================= */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: var(--cream);
+
+    color: var(--text);
+
+    min-height: 100vh;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+
+    background: linear-gradient(
+        135deg,
+        #173f5f,
+        #206a7a
+    );
+
+    color: white;
+
+    padding: 35px 8% 70px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.header-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+.logo {
+
+    font-size: 42px;
+
+}
+
+
+/* ================= TOMBOL MODE ================= */
+
+.mode-btn {
+
+    border: none;
+
+    background: rgba(255,255,255,0.15);
+
+    color: white;
+
+    padding: 11px 15px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.mode-btn:hover {
+
+    background: rgba(255,255,255,0.28);
+
+    transform: translateY(-2px);
+
+}
+
+
+header h1 {
+
+    max-width: 1000px;
+
+    margin: 20px auto 7px;
+
+    font-size: 38px;
+
+}
+
+
+header p {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    color: #c7dce3;
+
+}
+
+
+/* DEKORASI HEADER */
+
+.header-decoration {
+
+    position: absolute;
+
+    width: 250px;
+
+    height: 250px;
+
+    border: 35px solid rgba(255,255,255,0.06);
+
+    border-radius: 50%;
+
+    right: -70px;
+
+    top: -120px;
+
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+
+    width: 90%;
+
+    max-width: 1000px;
+
+    margin: -35px auto 50px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/* ================= WELCOME ================= */
+
+.welcome {
+
+    background: white;
+
+    padding: 25px 28px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 10px 30px var(--shadow);
+
+    margin-bottom: 20px;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease;
+
+}
+
+
+.label {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: var(--coral);
+
+    font-weight: bold;
+
+}
+
+
+.welcome h2 {
+
+    margin: 5px 0;
+
+    color: var(--navy);
+
+}
+
+
+.welcome p {
+
+    color: var(--muted);
+
+}
+
+
+/* HARI INI */
+
+.today-box {
+
+    background: var(--navy);
+
+    color: white;
+
+    padding: 15px 22px;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+}
+
+
+.today-box span {
+
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    color: #bcd1db;
+
+}
+
+
+.today-box strong {
+
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 18px;
+
+}
+
+
+/* ================= KONTROL ================= */
+
+.kontrol {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    gap: 15px;
+
+    align-items: end;
+
+    box-shadow: 0 7px 22px var(--shadow);
+
+    margin-bottom: 15px;
+
+}
+
+
+.pilihan {
+
+    flex: 1;
+
+}
+
+
+.pilihan label {
+
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: var(--navy);
+
+}
+
+
+select {
+
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 2px solid #d1dde1;
+
+    border-radius: 11px;
+
+    background: #f9fbfb;
+
+    color: var(--text);
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    outline: none;
+
+}
+
+
+select:focus {
+
+    border-color: var(--teal);
+
+}
+
+
+.today-btn {
+
+    border: none;
+
+    padding: 14px 20px;
+
+    border-radius: 11px;
+
+    background: var(--coral);
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.today-btn:hover {
+
+    transform: translateY(-2px);
+
+    filter: brightness(0.95);
+
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-box {
+
+    background: white;
+
+    padding: 10px 16px;
+
+    border-radius: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    box-shadow: 0 5px 18px var(--shadow);
+
+    margin-bottom: 15px;
+
+}
+
+
+.search-icon {
+
+    font-size: 18px;
+
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 15px;
+
+    background: transparent;
+
+    color: var(--text);
+
+    padding: 9px;
+
+}
+
+
+.search-box input::placeholder {
+
+    color: var(--muted);
+
+}
+
+
+/* ================= STATISTIK ================= */
+
+.statistik {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.stat-card {
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    box-shadow: 0 5px 18px var(--shadow);
+
+    transition: background 0.3s ease;
+
+}
+
+
+.stat-card > span {
+
+    font-size: 25px;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: var(--gray);
+
+    border-radius: 12px;
+
+}
+
+
+.stat-card small {
+
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    margin-bottom: 3px;
+
+}
+
+
+.stat-card strong {
+
+    color: var(--navy);
+
+    font-size: 18px;
+
+}
+
+
+/* ================= PESAN ================= */
+
+.pesan {
+
+    background: white;
+
+    padding: 55px 20px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    box-shadow: 0 7px 22px var(--shadow);
+
+}
+
+
+.pesan .icon {
+
+    font-size: 48px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.pesan h3 {
+
+    color: var(--navy);
+
+    margin-bottom: 8px;
+
+}
+
+
+.pesan p {
+
+    color: var(--muted);
+
+}
+
+
+/* ================= JUDUL HARI ================= */
+
+.judul-hari {
+
+    background: linear-gradient(
+        135deg,
+        var(--navy),
+        var(--teal)
+    );
+
+    color: white;
+
+    padding: 24px;
+
+    border-radius: 18px 18px 0 0;
+
+}
+
+
+.judul-hari h2 {
+
+    font-size: 26px;
+
+}
+
+
+.judul-hari p {
+
+    margin-top: 5px;
+
+    color: #c7dce3;
+
+}
+
+
+/* ================= DAFTAR MAPEL ================= */
+
+.daftar-mapel {
+
+    background: white;
+
+    padding: 18px;
+
+    border-radius: 0 0 18px 18px;
+
+    box-shadow: 0 8px 25px var(--shadow);
+
+}
+
+
+/* ================= MAPEL ================= */
+
+.mapel {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 17px;
+
+    margin-bottom: 12px;
+
+    background: #f5f7f7;
+
+    border-radius: 13px;
+
+    border-left: 5px solid var(--teal);
+
+    transition: 0.25s;
+
+    animation: muncul 0.4s ease both;
+
+}
+
+
+.mapel:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.mapel:hover {
+
+    transform: translateX(6px);
+
+    background: #eaf1f2;
+
+}
+
+
+/* NOMOR */
+
+.nomor {
+
+    width: 40px;
+
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: var(--navy);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+}
+
+
+.info {
+
+    flex: 1;
+
+}
+
+
+.nama {
+
+    font-weight: bold;
+
+    color: var(--text);
+
+    font-size: 16px;
+
+}
+
+
+.jam {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-top: 5px;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background: var(--navy);
+
+    color: #c7dce3;
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+    font-size: 13px;
+
+}
+
+
+.footer-line {
+
+    width: 45px;
+
+    height: 3px;
+
+    background: var(--coral);
+
+    margin: 0 auto 13px;
+
+    border-radius: 10px;
+
+}
+
+
+footer span {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #7fa9b7;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* ================= ANIMASI ================= */
+
+@keyframes muncul {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ================================================= */
+/* ================= MODE GELAP ==================== */
+/* ================================================= */
+
+body.dark {
+
+    background: #101820;
+
+    color: #e8f0f2;
+
+}
+
+
+/* KARTU */
+
+body.dark .welcome,
+body.dark .kontrol,
+body.dark .search-box,
+body.dark .stat-card,
+body.dark .pesan,
+body.dark .daftar-mapel {
+
+    background: #1b2b34;
+
+}
+
+
+/* JUDUL */
+
+body.dark .welcome h2,
+body.dark .pilihan label,
+body.dark .stat-card strong,
+body.dark .pesan h3 {
+
+    color: #e8f0f2;
+
+}
+
+
+/* TEKS */
+
+body.dark .welcome p,
+body.dark .stat-card small,
+body.dark .pesan p {
+
+    color: #9fb1b8;
+
+}
+
+
+/* SELECT */
+
+body.dark select {
+
+    background: #243a44;
+
+    color: #ffffff;
+
+    border-color: #45616c;
+
+}
+
+
+body.dark select:focus {
+
+    border-color: #4d9aaa;
+
+}
+
+
+/* SEARCH */
+
+body.dark .search-box input {
+
+    color: #ffffff;
+
+}
+
+
+body.dark .search-box input::placeholder {
+
+    color: #91a5ad;
+
+}
+
+
+/* MAPEL */
+
+body.dark .mapel {
+
+    background: #243a44;
+
+    border-left-color: #4d9aaa;
+
+}
+
+
+body.dark .mapel:hover {
+
+    background: #2c4853;
+
+}
+
+
+body.dark .nama {
+
+    color: #ffffff;
+
+}
+
+
+body.dark .jam {
+
+    color: #9fb1b8;
+
+}
+
+
+/* ICON STATISTIK */
+
+body.dark .stat-card > span {
+
+    background: #243a44;
+
+}
+
+
+/* FOOTER */
+
+body.dark footer {
+
+    background: #091117;
+
+}
+
+
+/* TOMBOL MODE */
+
+body.dark .mode-btn {
+
+    background: rgba(255,255,255,0.18);
+
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+
+    header {
+
+        padding: 30px 6% 65px;
+
+    }
+
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .welcome {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+
+    }
+
+
+    .today-box {
+
+        width: 100%;
+
+    }
+
+
+    .kontrol {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+    }
+
+
+    .today-btn {
+
+        width: 100%;
+
+    }
+
+
+    .statistik {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    main {
+
+        width: 92%;
+
+    }
+
+
+    .mode-btn {
+
+        font-size: 12px;
+
+        padding: 9px 11px;
+
+    }
+
+}
